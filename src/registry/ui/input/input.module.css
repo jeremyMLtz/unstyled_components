@@ -1,0 +1,39 @@
+.base {
+  font-size: 0.875rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.75rem;
+  background-color: transparent;
+  border-color: hsl(var(--input));
+  border-radius: calc(var(--radius) - 2px);
+  border-width: 1px;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  color: hsl(var(--foreground));
+  outline-offset: 2px;
+}
+
+.base[type="file"] {
+  height: auto;
+}
+
+.base::file-selector-button {
+  background-color: transparent;
+  color: hsl(var(--foreground));
+  border: none;
+  padding: 0;
+}
+
+.base::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.base:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.base:focus-visible {
+  outline-color: hsl(var(--secondary));
+}

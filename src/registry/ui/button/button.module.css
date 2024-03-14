@@ -1,0 +1,92 @@
+.base {
+  display: inline-flex;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: calc(var(--radius) - 0.25rem);
+  border-color: transparent;
+  height: fit-content;
+  transition: 0.1s ease-in-out background-color;
+}
+
+.base:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* VARIANTS */
+
+.primary {
+  color: hsl(var(--primary-foreground, white));
+  background-color: hsl(var(--primary, lightcoral));
+}
+
+.primary:hover {
+  background-color: hsl(var(--primary-darken));
+}
+
+.secondary {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
+.secondary:hover {
+  background-color: hsl(var(--secondary-darken));
+}
+
+.destructive {
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+}
+
+.destructive:hover {
+  background-color: hsl(var(--destructive-darken));
+}
+
+.outline {
+  background-color: transparent;
+  border-color: hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+
+.outline:hover {
+  background-color: hsl(var(--accent));
+}
+
+.ghost {
+  background-color: transparent;
+  color: hsl(var(--foreground));
+}
+
+.ghost:hover {
+  background-color: hsl(var(--accent));
+}
+
+.link {
+  background-color: transparent;
+  color: hsl(var(--primary));
+  text-underline-offset: 5px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* SIZES */
+
+.small {
+  font-size: var(--text-sm);
+  line-height: 1.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.medium {
+  font-size: var(--text-md);
+  line-height: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.large {
+  font-size: var(--text-lg);
+  line-height: 2rem;
+  padding: 1rem 2rem;
+}

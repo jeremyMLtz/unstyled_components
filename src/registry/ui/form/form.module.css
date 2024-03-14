@@ -1,0 +1,19 @@
+.error {
+  color: hsl(var(--destructive));
+}
+
+.description {
+  font-size: var(--text-sm);
+  font-weight: var(--semiBold);
+  color: hsl(var(--muted-foreground));
+}
+
+.message {
+  font-size: var(--text-sm);
+  font-weight: var(--semiBold);
+  color: hsl(var(--destructive));
+}
+
+.formItem {
+  margin-block: 0.4rem;
+}
