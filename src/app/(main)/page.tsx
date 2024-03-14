@@ -15,7 +15,7 @@ export default function Home() {
         <TestCard />
       </div>
 
-      <div className='border-solid h-[2000px] w-96 border-muted-foreground rounded m-auto border-2' />
+      {/* <div className='border-solid h-[2000px] w-96 border-muted-foreground rounded m-auto border-2' /> */}
     </main>
   );
 }

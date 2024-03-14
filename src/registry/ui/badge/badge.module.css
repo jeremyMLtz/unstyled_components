@@ -1,0 +1,46 @@
+.badgeBase {
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  font-size: var(--text-xs);
+  font-weight: var(--semiBold);
+  padding-block: 0.125rem;
+  padding-inline: 0.625rem;
+  transition: 0.1s ease-in-out all;
+}
+
+.primary {
+  border-color: transparent;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.primary:hover {
+  background: hsl(var(--primary-darken));
+}
+
+.secondary {
+  border-color: transparent;
+  background: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
+.secondary:hover {
+  background: hsl(var(--secondary-darken));
+}
+
+.destructive {
+  border-color: transparent;
+  background: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+}
+
+.destructive:hover {
+  background: hsl(var(--destructive-darken));
+}
+
+.outline {
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--border));
+}
