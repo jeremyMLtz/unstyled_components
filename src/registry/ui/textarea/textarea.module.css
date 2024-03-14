@@ -1,0 +1,26 @@
+.textareaBase {
+  background: transparent;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid hsl(var(--input));
+  color: hsl(var(--foreground));
+  display: flex;
+  font-size: var(--text-sm);
+  min-height: 85px;
+  outline-offset: 2px;
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+  width: 100%;
+}
+
+.textareaBase::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.textareaBase:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.textareaBase:focus-visible {
+  outline-color: hsl(var(--secondary));
+}
