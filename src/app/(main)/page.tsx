@@ -1,6 +1,5 @@
 import Header from "@/app/components/ui/header";
 import HeroSection from "../components/ui/hero";
-import TestDialog from "../components/ui/TestDialog";
 import { TestCard } from "../components/ui/TestCard";
 
 export default function Home() {
