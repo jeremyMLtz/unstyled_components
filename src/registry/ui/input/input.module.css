@@ -21,7 +21,6 @@
 
 .base::file-selector-button {
   background-color: transparent;
-
   border: none;
   color: hsl(var(--foreground));
   padding: 0;
