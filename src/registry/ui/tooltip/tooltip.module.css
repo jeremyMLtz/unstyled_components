@@ -1,0 +1,31 @@
+.tooltipBase {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipContent {
+  background: hsl(var(--background));
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+  font-size: var(--text-sm);
+  padding-inline: 0.75rem;
+  padding-block: 0.375rem;
+  position: absolute;
+  top: calc(0% - 40px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 50;
+  pointer-events: none;
+  transition: 0.2s ease-in-out all;
+  top: 0%;
+}
+
+.top {
+  top: calc(0% - 40px);
+}
+
+.bottom {
+  top: calc(100% + 8px);
+}
