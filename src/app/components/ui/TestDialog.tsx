@@ -13,7 +13,7 @@ import {
 const TestDialog = () => {
   return (
     <Dialog>
-      <DialogTrigger>Open</DialogTrigger>
+      <DialogTrigger className='w-fit'>Open</DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>

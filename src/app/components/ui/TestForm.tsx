@@ -15,6 +15,7 @@ import {
   FormMessage,
 } from "@/registry/ui/form/form";
 import { Input } from "@/registry/ui/input/input";
+import { Switch } from "@/registry/ui/switch/switch";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -23,6 +24,7 @@ const formSchema = z.object({
   email: z.string().min(2, {
     message: "email must be at least 2 characters.",
   }),
+  private_account: z.boolean().default(false).optional(),
 });
 
 export function TestForm() {
@@ -31,6 +33,7 @@ export function TestForm() {
     defaultValues: {
       username: "",
       email: "",
+      private_account: false,
     },
   });
   function onSubmit(values: z.infer<typeof formSchema>) {
@@ -69,6 +72,26 @@ export function TestForm() {
                 This is your email, its private.
               </FormDescription>
               <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name='private_account'
+          render={({ field }) => (
+            <FormItem className='flex flex-row items-center justify-between rounded-lg border p-4'>
+              <div className='space-y-0.5'>
+                <FormLabel className='text-base'>Private Account</FormLabel>
+                <FormDescription>
+                  Only People you send a link to can view your account.
+                </FormDescription>
+              </div>
+              <FormControl>
+                <Switch
+                  checked={field.value}
+                  onCheckedChange={field.onChange}
+                />
+              </FormControl>
             </FormItem>
           )}
         />
