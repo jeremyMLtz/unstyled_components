@@ -3,15 +3,15 @@
 }
 
 .description {
+  color: hsl(var(--muted-foreground));
   font-size: var(--text-sm);
   font-weight: var(--semiBold);
-  color: hsl(var(--muted-foreground));
 }
 
 .message {
+  color: hsl(var(--destructive));
   font-size: var(--text-sm);
   font-weight: var(--semiBold);
-  color: hsl(var(--destructive));
 }
 
 .formItem {

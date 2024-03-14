@@ -1,27 +1,27 @@
 .dialogBase {
+  bottom: 0;
   position: fixed;
   top: 0;
-  bottom: 0;
-  width: 100%;
   transition: 0.1s ease-in-out all;
+  width: 100%;
 }
 
 .dialogOverlay {
   background-color: hsla(0, 0%, 0%, 0.5);
-  position: absolute;
-  width: 100%;
-  top: 0;
   bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .dialogContent {
-  max-width: 515px;
-  margin: 25vh auto;
   background: hsl(var(--background));
   border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  margin: 25vh auto;
+  max-width: 515px;
   padding: 1.125rem;
   position: relative;
-  border-radius: var(--radius);
 }
 
 .dialogClose {
@@ -48,9 +48,9 @@
 }
 
 .dialogDescription {
+  color: hsl(var(--muted-foreground));
   font-size: var(--text-sm);
   line-height: 1.25rem;
-  color: hsl(var(--muted-foreground));
 }
 
 .dialogFooter {

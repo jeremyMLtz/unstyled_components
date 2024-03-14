@@ -11,6 +11,7 @@ import {
 } from "@/registry/ui/card/card";
 import { Input } from "@/registry/ui/input/input";
 import { Label } from "@/registry/ui/label/label";
+import { Textarea } from "@/registry/ui/textarea/textarea";
 
 export function TestCard() {
   return (
@@ -25,6 +26,13 @@ export function TestCard() {
             <div className='flex flex-col space-y-1.5'>
               <Label htmlFor='name'>Name</Label>
               <Input id='name' placeholder='Name of your project' />
+            </div>
+            <div className='flex flex-col space-y-1.5'>
+              <Label htmlFor='description'>Description</Label>
+              <Textarea
+                id='description'
+                placeholder='Provide a brief description of your project'
+              />
             </div>
           </div>
         </form>

@@ -31,7 +31,7 @@
 }
 
 .cardFooter {
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 0 1rem 1rem;
 }
