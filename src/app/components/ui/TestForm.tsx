@@ -79,7 +79,7 @@ export function TestForm() {
           control={form.control}
           name='private_account'
           render={({ field }) => (
-            <FormItem className='flex flex-row items-center justify-between rounded-lg border p-4'>
+            <FormItem className='flex flex-row items-center justify-between'>
               <div className='space-y-0.5'>
                 <FormLabel className='text-base'>Private Account</FormLabel>
                 <FormDescription>

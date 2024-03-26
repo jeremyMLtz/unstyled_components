@@ -1,0 +1,55 @@
+---
+title: Dialog
+description: Displays a dialog modal component.
+---
+
+<ComponentPreview name='dialog-demo' />
+
+## Installation
+
+<Steps>
+
+<Step>Copy and paste the following code into your component.</Step>
+
+<ComponentSource type='code' />
+
+<Step>Copy and paste the following CSS into a .module.css file.</Step>
+
+<ComponentSource type='styles' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+## Usage
+
+```tsx
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/registry/ui/dialog/dialog";
+```
+
+```tsx
+<Dialog>
+  <DialogTrigger>Open</DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>Edit profile</DialogTitle>
+      <DialogDescription>
+        Make changes to your profile here. Click save when you are done.
+      </DialogDescription>
+    </DialogHeader>
+    <span>Some awesome dialog stuff right here.</span>
+    <DialogFooter>
+      <Button variant='outline'>Cancel</Button>
+      <Button>Submit</Button>
+    </DialogFooter>
+  </DialogContent>
+</Dialog>
+```

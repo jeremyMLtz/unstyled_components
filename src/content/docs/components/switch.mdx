@@ -1,0 +1,38 @@
+---
+title: Switch
+description: A Switch component that allows a user to toggle between checked and not checked.
+---
+
+<ComponentPreview name='switch-demo' />
+
+## Installation
+
+<Steps>
+
+<Step>Copy and paste the following code into your component.</Step>
+
+<ComponentSource type='code' />
+
+<Step>Copy and paste the following CSS into a .module.css file.</Step>
+
+<ComponentSource type='styles' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+## Usage
+
+```tsx
+import { Switch } from "@/components/ui/switch";
+```
+
+```tsx
+<Switch id='optOut' checked={true} onCheckedChange={() => {}} />
+```
+
+## Examples
+
+### Form Switch
+
+<ComponentPreview name='switch-form' />

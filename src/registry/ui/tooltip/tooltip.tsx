@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, createContext, useContext } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import styles from "./tooltip.module.css";

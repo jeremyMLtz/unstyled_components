@@ -1,0 +1,35 @@
+---
+title: Avatar
+description: Displays an avatar with a fallback option.
+---
+
+<ComponentPreview name='avatar-demo' />
+
+## Installation
+
+<Steps>
+
+<Step>Copy and paste the following code into your component.</Step>
+
+<ComponentSource type='code' />
+
+<Step>Copy and paste the following CSS into a .module.css file.</Step>
+
+<ComponentSource type='styles' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+## Usage
+
+```tsx
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+```
+
+```tsx
+<Avatar>
+  <AvatarImage src='https://avatars.githubusercontent.com/u/42413866?v=4' />
+  <AvatarFallback>JL</AvatarFallback>
+</Avatar>
+```

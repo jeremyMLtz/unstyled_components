@@ -1,0 +1,11 @@
+pre {
+  color: hsl(var(--primary-foreground));
+}
+
+#copy-to-clipboard {
+  color: hsl(var(--primary-foreground));
+}
+
+#copy-to-clipboard:hover {
+  color: hsl(var(--primary-forground));
+}

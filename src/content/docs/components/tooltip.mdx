@@ -1,0 +1,57 @@
+---
+title: Tooltip
+description: Displays a positionable Tooltip component.
+---
+
+<ComponentPreview name='tooltip-demo' />
+
+## Installation
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install class-variance-authority
+```
+
+<Step>Copy and paste the following code into your component.</Step>
+
+<ComponentSource type='code' />
+
+<Step>Copy and paste the following CSS into a .module.css file.</Step>
+
+<ComponentSource type='styles' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+## Usage
+
+```tsx
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/registry/ui/tooltip/tooltip";
+```
+
+```tsx
+<Tooltip>
+  <TooltipTrigger>Its Above Me!</TooltipTrigger>
+  <TooltipContent>
+    <p>Heyyo, I'm a tooltip!</p>
+  </TooltipContent>
+</Tooltip>
+```
+
+## Examples
+
+### Top
+
+<ComponentPreview name='tooltip-demo' />
+
+### Bottom
+
+<ComponentPreview name='tooltip-bottom' />
