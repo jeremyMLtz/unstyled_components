@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
-import "./globals.css";
+import "@/app/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Unstyled Components",

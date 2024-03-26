@@ -18,11 +18,11 @@ const TestDialog = () => {
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
+            Make changes to your profile here. Click save when you are done.
           </DialogDescription>
         </DialogHeader>
         <TestForm />
-        <DialogFooter>This don't really mean nothing.</DialogFooter>
+        <DialogFooter>This does not really mean nothing.</DialogFooter>
       </DialogContent>
     </Dialog>
   );

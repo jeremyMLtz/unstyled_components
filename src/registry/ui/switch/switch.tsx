@@ -4,13 +4,14 @@ import styles from "./switch.module.css";
 export interface SwitchProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   onCheckedChange: (checked: boolean) => void;
-  checked: boolean | undefined;
+  checked?: boolean | undefined;
+  id?: string;
 }
 
 const SWITCH_NAME = "Switch";
 
 const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
-  ({ className, onCheckedChange, checked = false, ...props }, ref) => {
+  ({ className, onCheckedChange, checked = false, id, ...props }, ref) => {
     const [isFocused, setIsFocused] = React.useState(false);
     // We only want to handle the enter key when the Switch is focused,
     // this prevents bubbling issues when Switch is a form field
@@ -57,6 +58,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           ref={ref}
           aria-hidden
           tabIndex={-1}
+          id={id}
           {...props}
         />
       </span>

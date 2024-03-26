@@ -1,4 +1,5 @@
 .base {
+  align-items: center;
   border-width: 2px;
   border-style: solid;
   border-radius: calc(var(--radius) - 0.25rem);

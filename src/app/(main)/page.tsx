@@ -1,4 +1,4 @@
-import Header from "@/app/components/ui/header";
+import Header from "@/app/components/Header";
 import HeroSection from "../components/ui/hero";
 import { TestCard } from "../components/ui/TestCard";
 import TestDialog from "../components/ui/TestDialog";
