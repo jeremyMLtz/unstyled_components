@@ -5,12 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
-// import { Callout } from "@/components/callout";
 import { CodeBlockWrapper } from "@/app/components/CodeBlockWrapper";
 import { ComponentExample } from "@/app/components/ComponentExample";
 import { ComponentPreview } from "@/app/components/ComponentPreview";
 import { ComponentSource } from "@/app/components/ComponentSource";
-import { FrameworkDocs } from "@/app/components/FrameworkDocs";
 import Pre from "@/app/components/PreWithCopy";
 
 const components = {
@@ -106,7 +104,6 @@ const components = {
     />
   ),
   Image,
-  //   Callout,
   ComponentPreview,
   ComponentExample,
   ComponentSource,
@@ -122,9 +119,6 @@ const components = {
       className='[&>h3]:step steps mb-12 ml-4 border-l border-border pl-8 [counter-reset:step]'
       {...props}
     />
-  ),
-  FrameworkDocs: ({ ...props }: React.ComponentProps<typeof FrameworkDocs>) => (
-    <FrameworkDocs {...props} />
   ),
   Link: ({ ...props }: React.ComponentProps<typeof Link>) => (
     <Link className='font-medium underline underline-offset-4' {...props} />
