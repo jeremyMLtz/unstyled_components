@@ -16,24 +16,25 @@ import {
 } from "@/registry/ui/form/form";
 import { Input } from "@/registry/ui/input/input";
 import { Switch } from "@/registry/ui/switch/switch";
+import { Textarea } from "@/registry/ui/textarea/textarea";
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+  projectName: z.string().min(2, {
+    message: "Project name must be at least 2 characters.",
   }),
-  email: z.string().min(2, {
-    message: "email must be at least 2 characters.",
+  projectDesc: z.string().min(2, {
+    message: "Project description must be at least 2 characters.",
   }),
-  private_account: z.boolean().default(false).optional(),
+  projectPrivate: z.boolean().default(false).optional(),
 });
 
 export function TestForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
-      email: "",
-      private_account: false,
+      projectName: "",
+      projectDesc: "",
+      projectPrivate: false,
     },
   });
   function onSubmit(values: z.infer<typeof formSchema>) {
@@ -45,15 +46,15 @@ export function TestForm() {
       <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
         <FormField
           control={form.control}
-          name='username'
+          name='projectName'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Project Name</FormLabel>
               <FormControl>
-                <Input placeholder='jeremyMLtz' {...field} />
+                <Input placeholder='Unstyled' {...field} />
               </FormControl>
               <FormDescription>
-                This is your public display name.
+                This is your project display name.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -61,15 +62,18 @@ export function TestForm() {
         />
         <FormField
           control={form.control}
-          name='email'
+          name='projectDesc'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email Address</FormLabel>
+              <FormLabel>Project Description</FormLabel>
               <FormControl>
-                <Input type='email' placeholder='jeremyMLtz@jl.io' {...field} />
+                <Textarea
+                  placeholder='Enter project description here'
+                  {...field}
+                />
               </FormControl>
               <FormDescription>
-                This is your email, its private.
+                A brief description of your project.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -77,13 +81,13 @@ export function TestForm() {
         />
         <FormField
           control={form.control}
-          name='private_account'
+          name='projectPrivate'
           render={({ field }) => (
-            <FormItem className='flex flex-row items-center justify-between'>
+            <FormItem className='flex flex-row items-center justify-between rounded-md border border-border p-3'>
               <div className='space-y-0.5'>
-                <FormLabel className='text-base'>Private Account</FormLabel>
+                <FormLabel className='text-base'>Private Project</FormLabel>
                 <FormDescription>
-                  Only People you send a link to can view your account.
+                  Only People you send a link to can view your project.
                 </FormDescription>
               </div>
               <FormControl>
