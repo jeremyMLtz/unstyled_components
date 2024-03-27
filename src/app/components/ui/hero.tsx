@@ -1,3 +1,6 @@
+import { Button } from "@/registry/ui/button/button";
+import Link from "next/link";
+
 const HeroSection = ({
   title,
   subtitle,
@@ -10,9 +13,12 @@ const HeroSection = ({
       <h1 className='text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]'>
         {title}
       </h1>
-      <h2 className='max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl'>
+      <h2 className='max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl mb-4'>
         {subtitle}
       </h2>
+      <Button>
+        <Link href='/docs/introduction'>Get Started</Link>
+      </Button>
     </section>
   );
 };

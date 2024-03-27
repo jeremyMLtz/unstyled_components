@@ -12,7 +12,7 @@ export default function getComponentSource(name: string) {
   // Get the source code for the component .tsx file
   const component = Index[name];
   if (!component) {
-    return;
+    return [];
   }
   const componentSrc = component.files[0];
 
