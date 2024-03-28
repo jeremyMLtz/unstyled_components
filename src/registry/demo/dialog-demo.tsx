@@ -18,9 +18,9 @@ export default function DialogDemo() {
       <DialogTrigger className='w-fit'>Open</DialogTrigger>
       <DialogContent className='space-y-2'>
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
+          <DialogTitle>Create Project</DialogTitle>
           <DialogDescription>
-            Make changes to your profile here. Click save when you are done.
+            Add a name and a description to your project.
           </DialogDescription>
         </DialogHeader>
         <form>
@@ -33,7 +33,7 @@ export default function DialogDemo() {
               <Label htmlFor='description'>Description</Label>
               <Textarea
                 id='description'
-                placeholder='Provide a brief description of your app'
+                placeholder='Provide a brief description of your project'
               />
             </div>
           </div>
