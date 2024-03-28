@@ -114,7 +114,7 @@ const formSchema = z.object({
   }),
 });
 
-export function AccountForm() {
+export function ProjectForm() {
   // Create your form
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
