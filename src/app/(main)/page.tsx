@@ -1,8 +1,6 @@
 import Header from "@/app/components/Header";
 import HeroSection from "../components/ui/hero";
 import { TestCard } from "../components/ui/TestCard";
-import TestDialog from "../components/ui/TestDialog";
-import ExampleApplication from "../components/example-application/ExampleApplication";
 
 export default function Home() {
   return (
@@ -12,7 +10,9 @@ export default function Home() {
         title='Start building now'
         subtitle='An open source library providing simple, accessible, and customizable components with a simple copy and paste.'
       />
-      <ExampleApplication />
+      {/* <section className='flex justify-center pt-3 pb-10'>
+        <TestCard />
+      </section> */}
     </main>
   );
 }
