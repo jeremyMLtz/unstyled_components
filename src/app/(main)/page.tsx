@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
       <HeroSection
         title='Start building now'
-        subtitle='An open source library providing simple, accessible, and customizable components with a simple copy and paste.'
+        subtitle='An open source UI library providing simple, accessible, and customizable components with a simple copy and paste.'
       />
       {/* <section className='flex justify-center pt-3 pb-10'>
         <TestCard />
