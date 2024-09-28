@@ -1,0 +1,45 @@
+---
+title: Select
+description: A Select element that allows a user to select from a list of options.
+---
+
+<ComponentPreview name='select-demo' />
+
+## Installation
+
+<Steps>
+
+<Step>Copy and paste the following code into your component.</Step>
+
+<ComponentSource type='code' />
+
+<Step>Copy and paste the following CSS into a .module.css file.</Step>
+
+<ComponentSource type='styles' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+## Usage
+
+```tsx
+import { Switch } from "@/components/ui/select";
+```
+
+```tsx
+<Select value={value} onSelectItem={(option: string) => setValue(option)}>
+  <SelectTrigger placeholder='Select an option' />
+  <SelectContent>
+    <SelectItem value='opt1' display='Option 1' />
+    <SelectItem value='opt2' display='Option 2' />
+    <SelectItem value='opt3' display='Option 3' />
+  </SelectContent>
+</Select>
+```
+
+## Examples
+
+### Form Select
+
+<ComponentPreview name='select-form' />

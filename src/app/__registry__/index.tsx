@@ -60,6 +60,13 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/ui/label/label")),
       files: ["registry/ui/label/label.tsx","registry/ui/label/label.module.css"],
     },
+    "select": {
+      name: "select",
+      type: "ui",
+      registryDependencies: undefined,
+      component: React.lazy(() => import("@/registry/ui/select/select")),
+      files: ["registry/ui/select/select.tsx","registry/ui/select/select.module.css"],
+    },
     "switch": {
       name: "switch",
       type: "ui",
@@ -199,6 +206,20 @@ export const Index: Record<string, any> = {
       registryDependencies: ["label"],
       component: React.lazy(() => import("@/registry/demo/label-demo")),
       files: ["registry/demo/label-demo.tsx"],
+    },
+    "select-demo": {
+      name: "select-demo",
+      type: "demo",
+      registryDependencies: ["select"],
+      component: React.lazy(() => import("@/registry/demo/select-demo")),
+      files: ["registry/demo/select-demo.tsx"],
+    },
+    "select-form": {
+      name: "select-form",
+      type: "demo",
+      registryDependencies: ["select","form","button","input"],
+      component: React.lazy(() => import("@/registry/demo/select-form")),
+      files: ["registry/demo/select-form.tsx"],
     },
     "switch-demo": {
       name: "switch-demo",
