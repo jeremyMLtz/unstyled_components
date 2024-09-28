@@ -44,6 +44,11 @@ const components: Registry = [
     files: ["ui/label/label.tsx", "ui/label/label.module.css"],
   },
   {
+    name: "select",
+    type: "ui",
+    files: ["ui/select/select.tsx", "ui/select/select.module.css"],
+  },
+  {
     name: "switch",
     type: "ui",
     files: ["ui/switch/switch.tsx", "ui/switch/switch.module.css"],
@@ -162,6 +167,18 @@ const demos: Registry = [
     type: "demo",
     registryDependencies: ["label"],
     files: ["demo/label-demo.tsx"],
+  },
+  {
+    name: "select-demo",
+    type: "demo",
+    registryDependencies: ["select"],
+    files: ["demo/select-demo.tsx"],
+  },
+  {
+    name: "select-form",
+    type: "demo",
+    registryDependencies: ["select", "form", "button", "input"],
+    files: ["demo/select-form.tsx"],
   },
   {
     name: "switch-demo",

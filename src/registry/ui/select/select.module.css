@@ -1,0 +1,64 @@
+.trigger {
+  background-color: transparent;
+  border: 1px solid hsl(var(--input));
+  border-radius: calc(var(--radius) - 2px);
+  color: hsl(var(--foreground));
+  display: flex;
+
+  font-size: 0.875rem;
+  height: 2.5rem;
+  max-width: 20rem;
+  outline-offset: 2px;
+  padding-inline: 0.5rem;
+  padding-block: 0.75rem;
+
+  width: 100%;
+}
+
+.trigger:hover {
+  background: transparent;
+}
+
+.trigger:focus {
+  border-color: var(--secondary);
+  outline: none;
+}
+
+/* Style for the dropdown content */
+.content {
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--input));
+  border-radius: calc(var(--radius) - 2px);
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+  width: -webkit-fill-available;
+  max-width: 20rem;
+  outline-offset: 2px;
+  padding-inline: 0.5rem;
+  padding-block: 0.75rem;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1000;
+}
+
+/* Style for each item in the dropdown */
+.option {
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect for dropdown items */
+.option:hover {
+  background-color: hsl(var(--muted));
+}
+
+/* Selected item styling */
+.selected {
+  background-color: hsl(var(--muted));
+  font-weight: var(--bold);
+}
