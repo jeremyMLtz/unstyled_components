@@ -113,7 +113,7 @@ const SelectTrigger = React.forwardRef<
   const defaultPlaceholder = props.placeholder ?? "Select an option";
 
   return (
-    <Button
+    <button
       type='button'
       aria-haspopup='dialog'
       aria-expanded={open}
@@ -123,7 +123,7 @@ const SelectTrigger = React.forwardRef<
       ref={combinedRefs}
       {...props}>
       {selectedOption ? selectedOption.display : defaultPlaceholder}
-    </Button>
+    </button>
   );
 });
 
