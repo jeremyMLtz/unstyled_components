@@ -1,17 +1,16 @@
 .trigger {
+  align-items: center;
   background-color: transparent;
   border: 1px solid hsl(var(--input));
   border-radius: calc(var(--radius) - 2px);
   color: hsl(var(--foreground));
   display: flex;
-
   font-size: 0.875rem;
   height: 2.5rem;
   max-width: 20rem;
   outline-offset: 2px;
   padding-inline: 0.5rem;
   padding-block: 0.75rem;
-
   width: 100%;
 }
 
